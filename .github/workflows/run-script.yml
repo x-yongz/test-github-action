@@ -20,11 +20,14 @@ jobs:
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
 
       # Run the shellscripts
-      - name: Run run.sh
+      - name: Run the script
         run: sh ./run.sh
 
-      - name: Run print-list-of-files.sh
+      - name: Display the list of files in the directory
         run: sh ./print-list-of-files.sh
+
+      - name: Display the contents of file.txt
+        run: sh ./display.sh
 
       # Print out the job status
       - run: echo "This job's status is ${{ job.status }}."
