@@ -1,1 +1,1 @@
-cat files.txt
+cat file.txt
